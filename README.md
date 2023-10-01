@@ -2,4 +2,4 @@
 
 ## Contact links
 - vosirandr@gmail.com
-- https://boosty.to/vosirandr/donate
+- https://boosty.to/vosirandr

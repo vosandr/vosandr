@@ -41,26 +41,26 @@ export default function Projects() {
   const showMoreDataSnapshot = useSnapshot(showMoreData)
   return (
     <>
-      <div className={headerContainer}>
+      {/* <div className={headerContainer}>
         <SubheaderText>Projects</SubheaderText>
         {(!showMoreDataSnapshot.showMoreData ||
           Object.keys(appStoreSnapshot.opened).length > 0) && (
-          <Button
-            onClick={() => {
-              if (!showMoreData.showMoreData) {
-                showMoreData.showMoreData = true
-              } else {
-                appStore.opened = {}
-              }
-            }}
-            title={
-              showMoreDataSnapshot.showMoreData
-                ? 'Hide all stats'
-                : 'Chart more data'
-            }
-          />
+          // <Button
+          //   onClick={() => {
+          //     if (!showMoreData.showMoreData) {
+          //       showMoreData.showMoreData = true
+          //     } else {
+          //       appStore.opened = {}
+          //     }
+          //   }}
+          //   title={
+          //     showMoreDataSnapshot.showMoreData
+          //       ? 'Hide all stats'
+          //       : 'Chart more data'
+          //   }
+          // />
         )}
-      </div>
+      </div> */}
       <Suspense fallback={<Loaders />}>
         <div className={projectsContainer}>
           {projects.map((project) => (

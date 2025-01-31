@@ -3,7 +3,7 @@ import { ProjectCount } from 'helpers/projectsData'
 
 export default interface Project {
   title: string
-  code: keyof ProjectCount
+  code?: keyof ProjectCount
   link: string
   publications?: {
     name: string

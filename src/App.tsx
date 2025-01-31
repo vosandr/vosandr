@@ -1,4 +1,4 @@
-import { Footer } from 'components/Text'
+import { BodyText, Footer, Link } from 'components/Text'
 import Intro from 'components/Intro'
 import Profile from 'components/Profile'
 import Projects from 'components/Projects'
@@ -9,10 +9,13 @@ const App = () => {
   return (
     <Root>
       <Profile />
-      <TotalNumberOfUsers />
-      <Intro />
+      {/* <Intro /> */}
       <Projects />
-      <Footer>Thanks for scrolling!</Footer>
+      {/* <Footer>Thanks for scrolling!</Footer> */}
+      <Footer>
+        Сайт создан на основе{' '}
+        <Link url="https://borodutch.com/">borodutch.com</Link>
+      </Footer>
     </Root>
   )
 }

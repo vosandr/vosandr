@@ -50,7 +50,7 @@ const chartContainer = classnames(
 
 const ProjectComponent: FC<{ project: Project }> = ({ project }) => {
   const appStoreSnapshot = useSnapshot(appStore)
-  const opened = appStoreSnapshot.opened[project.code]
+  // const opened = appStoreSnapshot.opened[project.code]
   const { projectsData } = useSnapshot(baseProjectsData)
 
   return (
@@ -60,13 +60,13 @@ const ProjectComponent: FC<{ project: Project }> = ({ project }) => {
           <a href={project.link} rel="noopener noreferrer" target="_blank">
             <ProjectTitle>{project.title}</ProjectTitle>
           </a>
-          {projectsData.userCountSeparate?.[project.code] && (
+          {/* {projectsData.userCountSeparate?.[project.code] && (
             <NumberOfProjectUsersText>
               {formatNumber(projectsData.userCountSeparate[project.code])} users
             </NumberOfProjectUsersText>
-          )}
+          )} */}
         </div>
-        {(project.publications?.length || project.charts?.().length) && (
+        {/* {(project.publications?.length || project.charts?.().length) && (
           <Button
             onClick={() => {
               appStore.opened[project.code] = !appStore.opened[project.code]
@@ -77,10 +77,10 @@ const ProjectComponent: FC<{ project: Project }> = ({ project }) => {
                 : 'Show stats'
             }
           />
-        )}
+        )} */}
       </div>
       <Description description={project.description()} />
-      {opened && project.charts && (
+      {/* {opened && project.charts && (
         <div className={chartsContainer}>
           {project.charts().map((chart) => (
             <div className={chartContainer} key={chart.title}>
@@ -102,7 +102,7 @@ const ProjectComponent: FC<{ project: Project }> = ({ project }) => {
             </ul>
           </GradientText>
         </>
-      )}
+      )} */}
     </div>
   )
 }

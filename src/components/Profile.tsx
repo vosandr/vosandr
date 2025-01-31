@@ -59,46 +59,16 @@ export default function Profile() {
   return (
     <div className={profileContainer}>
       <div className={profileTextContainer}>
-        <AuxiliaryText>borodutch.eth</AuxiliaryText>
-        <HeaderText>Nikita Kolmogorov</HeaderText>
-        <Suspense fallback={<Loader />}>
-          <NumberOfUsers />
-        </Suspense>
-        <NumberOfUsersAuxiliaryText>
-          people used my apps today
-        </NumberOfUsersAuxiliaryText>
-        <BodyText>
-          Updated daily. Curious how I calculated this number? Check out the
-          code{' '}
-          <Link url="https://github.com/backmeupplz/borodutch-stats/blob/master/src/helpers/userCount.ts">
-            here
-          </Link>
-          . Careful: it's not the prettiest code I've written.
-        </BodyText>
+        <HeaderText>Vosandr</HeaderText>
         <div className={socialButtonsContainer}>
-          <IconButton icon="telegram" url="https://t.me/borodutch" />
-          <IconButton icon="github" url="https://github.com/backmeupplz" />
+          <IconButton icon="github" url="https://github.com/vosandr" />
+          <IconButton icon="email" url="mailto:vosirandr.com" />
           <IconButton
-            icon="linkedin"
-            url="https://www.linkedin.com/in/nikitakolmogorov"
+            icon="signal"
+            url="https://signal.group/#CjQKIANQhtx87gyu4Jd1bL0iQJDX5AEOkj4zxVIR1X296MgcEhBLv8lcSXSuVE8ZWYsVy0zh"
           />
-          <IconButton icon="email" url="mailto:n@borodutch.com" />
-          <IconButton icon="facebook" url="https://fb.me/borodutch" />
-          <IconButton icon="twitter" url="https://twitter.com/backmeupplz" />
+          <IconButton icon="telegram" url="https://t.me/vosandrchat" />
         </div>
-      </div>
-      <div className={imageContainer}>
-        <div className={circle} />
-        <div className={profileImage}>
-          <img src="/images/avatar.webp" alt="avatar" />
-        </div>
-        <div
-          className={imageOverlay}
-          style={{
-            background:
-              'linear-gradient(170deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 90%)',
-          }}
-        />
       </div>
     </div>
   )

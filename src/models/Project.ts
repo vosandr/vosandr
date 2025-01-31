@@ -1,5 +1,5 @@
-import { ChartData } from 'react-frappe-charts'
-import { ProjectCount } from 'helpers/projectsData'
+import type { ChartData } from 'react-frappe-charts'
+import type { ProjectCount } from 'helpers/projectsData'
 
 export default interface Project {
   title: string

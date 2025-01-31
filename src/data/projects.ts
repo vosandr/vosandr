@@ -1,6 +1,6 @@
 import { projectsData as baseProjectsData } from 'helpers/projectsData'
 import { useSnapshot } from 'valtio'
-import Project from 'models/Project'
+import type Project from 'models/Project'
 
 const projects: Project[] = [
   {
